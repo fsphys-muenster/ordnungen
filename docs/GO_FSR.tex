@@ -1,0 +1,233 @@
+% Autor: Simon May
+% Datum: 2014-12-26
+
+%%% Pakete & Klassen
+% Verwendung von KOMA-Script
+\documentclass[
+	% Papierformat
+	a4paper,
+	% Schriftgröße
+	12pt,
+	% einseitiges Layout
+	oneside,
+	% Abstand zwischen Absätzen statt Einrücken
+	parskip=half-,
+	% Papiergröße korrekt ins Dokument schreiben
+	pagesize,
+	% Linie unter der Kopfzeile
+	headsepline,
+	% deutsches Dokument (neue deutsche Rechtschreibung)
+	german,
+	ngerman
+]{scrartcl}
+\usepackage{iftex}
+\ifLuaTeX
+	% Einstellungen für Schriftart
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+	% Silbentrennung, sprachspezifische Einstellungen
+	\usepackage{polyglossia}
+	\setmainlanguage{german}
+\else
+	% Silbentrennung, sprachspezifische Einstellungen
+	\usepackage{babel}
+	% Mögliche darstellbare Zeichen (Umlaute, Sonderzeichen...)
+	\usepackage[T1]{fontenc}
+	% Zeichenkodierung der TeX-Datei
+	\usepackage[utf8]{inputenc}
+	% Schriftart
+	\usepackage{lmodern}
+	% führt Befehle für Sonderzeichen ein
+	\usepackage{textcomp}
+\fi
+% Einige LaTeX-Bugs beheben
+\usepackage{fixltx2e}
+% Für Kopf-/Fußzeile etc.
+\usepackage{scrpage2}
+% Farben ermöglichen
+\usepackage{xcolor}
+% Paket für Bilder-Einbindung (EPS, PNG, JPG, PDF)
+\usepackage{graphicx}
+% Formatierung von Daten
+\usepackage{datetime}
+% Einstellungen für Aufzählungen
+\usepackage{enumitem}
+% "Schlaue" Anführungszeichen
+\usepackage{csquotes}
+% Seitenränder
+\usepackage[
+	left=2cm,
+	right=2cm,
+	top=2cm,
+	bottom=1.3cm,
+	includeheadfoot
+]{geometry}
+% Verlinkung, Querverweise können im PDF angeklickt werden
+\usepackage[bookmarksnumbered, unicode]{hyperref}
+
+%%% Einstellungen
+% Anführungszeichen automatisch umwandeln
+\MakeOuterQuote{"}
+
+% Links/Verweise in PDF mit Kasten der Dicke 0.5pt versehen
+\hypersetup{
+	pdfborder={0 0 0.5}
+}
+
+% Kopfzeile
+\chead{Geschäftsordnung des FSR Physik der Westfälischen Wilhelms-Universität Münster}
+\pagestyle{scrheadings}
+
+% Darstellung von sections anpassen
+\renewcommand{\thesection}{§~\arabic{section}}
+
+% Befehl zur Darstellung von E-Mail-Adressen
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+
+%%% Bestandteile des Titels
+\titlehead{\vspace*{-2cm}
+\centering
+\includegraphics[width=0.8\textwidth]{Fachschaft_Physik_Logo_v2014_2.pdf}}
+\title{Geschäftsordnung}
+\subtitle{des Fachschaftsrats Physik\\
+der Westfälischen Wilhelms-Universität Münster}
+\date{in der Fassung vom \formatdate{17}{12}{2014}}
+\author{}
+
+\begin{document}
+
+% Titel mit Logo
+\maketitle
+
+\section{Allgemeines}
+\label{sec:Allgemeines}
+\begin{enumerate}
+	\item Diese Geschäftsordnung (GO) basiert auf §~4 Abs.~3 der Satzung der Fachschaftsvertretung Physik im Fachbereich Physik der Westfälischen Wilhelms-Universität Münster vom \formatdate{20}{10}{2010} und auf §~19 der Satzung der Studierendenschaft der Westfälischen Wilhelms-Universität Münster vom \formatdate{22}{10}{2002}.
+	\item Das Logo der Fachschaft Physik ist auf allen offiziellen Schriftstücken (Briefe, Poster, Publikationen und Ähnlichem) zu verwenden. Beispielhaft ist dieses auf der ersten Seite der Geschäftsordnung aufgeführt.
+\end{enumerate}
+
+\section{Aufgaben des Fachschaftsrats (FSR)}
+\label{sec:Aufgaben}
+Die Aufgaben der Fachschaft sind in §~20 der Satzung der Studierendenschaft aufgeführt. Im Folgenden werden zentrale Aufgaben genauer beschrieben:
+\begin{enumerate}
+	\item Der FSR koordiniert die Arbeit der Fachschaftsvertretung (FSV) Physik.
+	\item Der FSR gewährleistet eine angemessene Beratung der Studierenden und sorgt für Präsenzzeiten. Die Präsenzzeiten werden in einem Plan festgehalten, der am Anfang eines jeden Semesters aufzustellen ist. In der Vorlesungszeit ist ein Minimum von zwei Tagen in der Woche mit insgesamt mindestens vier Stunden Präsenzzeit zu gewährleisten. Die Mitglieder des FSR sorgen für den Präsenzdienst. Während des Präsenzdienstes soll ein umfangreiches Beratungsangebot garantiert werden.
+	\item Der FSR vertritt die gemeinsamen Interessen der Fachschaft und deren fachlichen Belange.
+	\item Der FSR sorgt durch Öffentlichkeitsarbeit für Transparenz und Anerkennung unter der Studierendenschaft. Dies wird unter anderem durch regelmäßige Information auf der Internetseite sowie durch Aushänge und Informationsveranstaltungen gewährleistet.
+	\item Der FSR sorgt für eine umfassende Bereitstellung von studien- und prüfungsrelevantem Informationsmaterial, darunter die Ausleihe von Altklausuren und Prüfungsprotokollen. Die Ausleihe ist in einer separaten Anleitung geregelt; sie bildet keinen Teil der Geschäftsordnung.
+	\item Der FSR organisiert die Veranstaltungen zur Einführung der Erstsemester in das Studium.
+\end{enumerate}
+
+\section{Einberufung und Vorbereitung der FSR-Sitzungen} \label{sec:Sitzung-A}
+\begin{enumerate}
+	\item Der Termin für die FSR-Sitzung wird zu Beginn des Semesters von den FSR-Mitgliedern festgelegt.
+	\item In der vorlesungsfreien Zeit finden FSR-Sitzungen nur bei konkretem Bedarf statt. Sie werden mindestens eine Woche vorher durch den E-Mail-Verteiler und auf der Internetseite des FSR angekündigt.
+	\item Außerordentliche Sitzungen müssen mindestens zwei Tage vorher aus triftigem Grund einberufen werden. 
+	\item Die Sitzungen sind öffentlich. Auf Antrag eines FSR-Mitglieds und mit einfacher Mehrheit aller anwesenden stimmberechtigten Mitglieder des FSR ist die Sitzung oder einzelne Tagesordnungspunkte nicht öffentlich.
+	
+	Auf Beschluss kann das Protokoll einen nicht-öffentlichen Teil enthalten. Dies ist insbesondere dann zu wählen, wenn mit der Nennung Persönlichkeitsrechte verletzt werden können.
+	\item Alle FSR-Mitglieder sollten möglichst zu jedem Termin erscheinen. Abwesenheit sollte zuvor angemeldet werden.
+	\item Abstimmungen sind nur unter einem eigenen Tagesordnungspunkt möglich.
+\end{enumerate}
+
+\section{Durchführung der FSR-Sitzungen}
+\label{sec:Sitzung-B}
+\begin{enumerate}
+	\item Die Eröffnung der Sitzung obliegt dem Vorsitz des FSR oder dessen Vertretung. Sollten Vorsitz und Vertretung nicht anwesend sein, eröffnet das dienstälteste Mitglied des FSR die Sitzung.  
+	\item Zu Beginn der Sitzung werden folgende Dinge festgestellt bzw.\ zugewiesen: Beschlussfähigkeit, Redeleitung, Protokollant, alte Protokolle und Tagesordnung.
+	\item Die Redeleitung obliegt dem Vorsitz oder der Vertretung. Sollten Vorsitz und Vertretung nicht anwesend sein, wird zu Beginn der Sitzung nach den unter \ref{sec:Abstimmungen} definierten Regeln die Redeleitung gewählt.
+	\item Die Protokollführung kann in einem rotierenden System festgelegt werden, wenn sich kein Mitglied bereit erklärt, dieses anzufertigen. Regelungen zur Protokollführung sind in \ref{sec:Protokolle} zu finden.
+	\item Auf Antrag kann die Redezeit auf drei Minuten begrenzt werden.
+	\item Bei diskriminierenden Aussprüchen oder Redeinhalten sowie persönlichen Beleidigungen behält sich der FSR nach Mehrheitsbeschluss Sanktionen vor. Diese können von einer Verwarnung über ein Redeverbot bis zum Verweis aus dem Sitzungsraum gehen.
+	\item Wortmeldungen zur Geschäftsordnung (GO) gehen allen anderen Wortmeldungen vor. Auch auf einen solchen Antrag darf das Wort jedoch nicht erteilt werden, solange eine Person redet, der die Redeleitung zur Zeit der Antragsstellung das Wort bereits erteilt hatte, oder solange eine Wahl oder Abstimmung läuft, deren Beginn die Redeleitung vor der Wortmeldung festgestellt hatte.
+	\item Als Anträge zur GO sind insbesondere anzusehen Anträge auf:
+	\begin{enumerate}
+		\item Schluss der Redeliste. Jedoch nur von Personen, die selbst nicht zur Sache gesprochen haben.
+		\item Schluss der Aussprache, ggf.\ sofortige Abstimmung. Jedoch nur von Personen, die selbst nicht zur Sache gesprochen haben.
+		\item Vertagung der Beschlussfassung über einen Antrag.
+		\item Vertagung eines Punktes der Tagesordnung.
+		\item Nichtbefassung mit einem Tagesordnungspunkt (TOP) oder Antrag.
+		\item Unterbrechung der Sitzung.
+		\item Feststellung der Beschlussfähigkeit.
+		\item Sofortige Wiederholung einer Abstimmung oder eines Wahlganges wegen offensichtlicher Formfehler oder wegen objektiver Unklarheit über den Inhalt oder die Abstimmung.
+		\item Schluss der Sitzung (Zweidrittelmehrheit notwendig).
+		\item Zurückkommen auf einen bereits abgeschlossenen TOP (Zweidrittelmehrheit notwendig).
+		\item Änderung der Tagesordnung.
+	\end{enumerate}
+	\item Ein Antrag zur Geschäftsordnung gilt als angenommen, wenn ihm nicht widersprochen wird. Bei Widerspruch ist nach der Anhörung von höchstens je einer Rednerin/einem Redner für und gegen den Antrag abzustimmen. Begründungspflicht besteht bei Widerspruch nicht (formale Ablehnung).
+\end{enumerate}
+
+\section{Abstimmungen}
+\label{sec:Abstimmungen}
+\begin{enumerate}
+	\item Jedes FSR-Mitglied besitzt eine Stimme. Stimmberechtigt sind alle gewählten Mitglieder des FSR. Der FSR kann weiteren Mitgliedern der Fachschaft das Stimmrecht erteilen.
+	\item Der FSR ist beschlussfähig, wenn 50\,\% aller FSR-Mitglieder anwesend sind.
+	\item Ist ein TOP zur Entscheidung reif, so eröffnet die Redeleitung nach Abfragen der Anträge die Abstimmung. Anträge zum Abstimmungsgegenstand sind von diesem Zeitpunkt an nicht mehr zulässig. Das Recht auf anschließende Anträge zur Geschäftsordnung bleibt unberührt.
+	\item Über weitergehende Anträge wird zuerst abgestimmt. Falls es inhaltlich nicht zu klären ist, entscheidet die Reihenfolge der Antragsstellung.
+	\item Änderungsvorschläge zu einem Sachantrag sind vor dem Hauptantrag zur Abstimmung zu stellen. Soweit der FSR den Änderungsanträgen zustimmt oder sie von der Antragstellerin oder dem Antragsteller übernommen werden, wird der Hauptantrag in der geänderten Fassung zur Abstimmung gestellt.
+	\item Im Normalfall wird in der FSR-Sitzung durch Handzeichen abgestimmt. Auf Antrag einer stimmberechtigten Person muss eine geheime Abstimmung durchgeführt werden.
+	\item Bei gleich vielen Ja- und Nein-Stimmen gilt ein Antrag als abgelehnt. Liegen mehr Enthaltungen als Ja-Stimmen vor, muss die Abstimmung einmal wiederholt werden. Sollte sich gleiches ergeben, gilt der Antrag als abgelehnt.
+\end{enumerate}
+
+\section{Protokolle}
+\label{sec:Protokolle}
+\begin{enumerate}
+	\item Von jeder Sitzung wird ein Protokoll erstellt.
+	\item Auf Beschluss kann das Protokoll einen nicht-öffentlichen Teil enthalten. Dies ist insbesondere dann zu wählen, wenn mit der Nennung Persönlichkeitsrechte verletzt werden können.
+	\item Das Protokoll sollte in elektronischer Form (\LaTeX) angefertigt werden, um eine gut lesbare, dauerhafte und durchsuchbare Dokumentation zu erhalten.
+	\item Der öffentliche Teil eines Protokolls wird im Fachschaftsraum ausgehängt. Eine Veröffentlichung auf den Internetseiten der Fachschaft ist möglich.
+	\item Auf Antrag kann eine Kopie des öffentlichen Protokolls erstellt und ausgehändigt werden.
+	\item Das Protokoll gilt als genehmigt, wenn auf der folgenden FSR-Sitzung keine Gegenrede erhoben wird.
+\end{enumerate}
+
+\section{Fachschaftsvollversammlung (FVV)}
+Ergänzend/abweichend zu den Regelungen in \ref{sec:Sitzung-B}--\ref{sec:Abstimmungen} gelten folgende Regelungen:
+\begin{enumerate}
+	\item Versammlungsleiter/in ist ein/e Sprecher/in des FSR.
+	\item Alle Mitglieder der Fachschaft Physik haben Rede-, Stimm- und Antragsrecht.
+	\item Die Beschlussfassung erfolgt mit der einfachen Mehrheit der abgegebenen Stimmen; bei Stimmgleichheit ist ein Antrag abgelehnt.
+	\item Über die FVV ist ein Protokoll anzufertigen und im Anschluss öffentlich auszuhängen.
+\end{enumerate}
+
+\section{Fachschaftsraum}
+\label{sec:Fachschaftsraum}
+\begin{enumerate}
+	\item Der FSR ist für die Ordnung und Sauberkeit des Fachschaftsraums zuständig.
+	\item Zu Beginn eines Semesters wird eine Reinigungsliste angelegt, auf der festgehalten wird, wer in welcher Woche den Fachschaftsraum zu säubern hat. Jedes FSR-Mitglied ist dazu angehalten, mindestens einmal im Semester diesen Dienst zu übernehmen.
+	\item Der Fachschaftsraum muss immer verschlossen sein, wenn niemand im Raum ist.
+	\item Ein Schlüssel wird nur an diejenigen Personen ausgegeben, die diesen nachvollziehbar benötigen. Gleichzeitig wird erwartet, dass alle Mitglieder einen Präsenzdienst übernehmen, wenn ein Schlüssel ausgegeben wurde.
+	\item Der Schlüssel muss spätestens mit Austritt aus dem FSR zurückgegeben werden. Auf Antrag kann dieser in Ausnahmefällen auch an ehemalige Mitglieder des FSR ausgegeben werden. Es ist zu begründen, wofür dieser benötigt wird. Eine Abstimmung auf einer FSR-Sitzung ist dazu erforderlich.
+	\item Ein FSR-Mitglied ist für die Verwaltung der Schlüssel zuständig (Schlüsselwart).
+\end{enumerate}
+
+\section{E-Mail-Verteiler und Nutzergruppe}
+\label{sec:Technik}
+ \begin{enumerate}
+  \item Der FSR unterhält einen E-Mail-Verteiler: \textbf{\email{fsphys-l@listserv.uni-muenster.de}}. Dieser wird von Herrn Dr.\ Adam (\email{adamh@uni-muenster.de}) technisch verwaltet. E-Mails an die E-Mail-Adresse der Fachschaft (\email{fsphys@uni-muenster.de}) werden vom Verwalter nach einer Spam-Filterung an den internen Verteiler weitergeleitet. Die interne Kommunikation des FSR erfolgt über den Verteiler.
+  \item Mitglied in dem E-Mail-Verteiler wird jedes Mitglied des FSR. Dem Verwalter wird jeweils mitgeteilt, wie er über einen Aufnahmeantrag zu entscheiden hat.
+  \item Mit Austritt aus dem FSR endet die Mitgliedschaft im E-Mail-Verteiler. Alte Mitglieder können (mündlich) beantragen, weiterhin Mitglied im E-Mail-Verteiler zu bleiben. Der FSR entscheidet über den Antrag.
+  \item Der FSR unterhält eine Nutzergruppe: \textbf{\texttt{p0fsphys}}. Diese wird von Herrn Dr. Berkemeier (\email{j.berkemeier@uni-muenster.de}) verwaltet. Die Mitgliedschaft ermöglicht den Zugang zum Gruppenlaufwerk und das Drucken auf dem Drucker im Fachschaftsraum.
+  \item Mitglied in der Nutzergruppe wird jedes Mitglied des FSR. Anträge auf Aufnahme und Verlängerung der Mitgliedschaft in der Nutzergruppe erfolgen über das ZIV und werden an den Verwalter der Nutzergruppe weitergeleitet.
+  \item Mit Austritt aus dem FSR erlischt die Mitgliedschaft in der Nutzergruppe. Nur aus triftigem Grund ist eine weitere Mitgliedschaft möglich. Dies muss in jedem Einzelfall vom FSR beschlossen werden.
+  \item Der FSR beauftragt eine oder mehrere Personen mit der Betreuung und Dokumentation des E-Mail-Verteilers und der Nutzergruppe. Diese Personen sollen in regelmäßigen Abständen, z.\,B.\ einmal im Jahr, die aktuellen Mitglieder ermitteln und sind Ansprechpartner für die Verwalter.
+  \label{item:Ansprechpartner}
+ \end{enumerate}
+
+\section{Fachschaftenkonferenz (FK)}
+ \begin{enumerate}
+  \item Die Fachschaft Physik ist Mitglied der FK.
+  \item Der FSR kann einen Vertreter entsenden.
+  \item Der FSR stimmt über Anträge der FK ab. Die Abstimmungsergebnisse werden entweder schriftlich durch Hauspost oder mündlich durch den Vertreter eingereicht.
+  \item Das Votum des FSR ist bindend. Liegt kein Votum vor, kann der Vertreter im Sinne des FSR entscheiden.
+ \end{enumerate}
+
+\section{Beschluss und Änderung der Geschäftsordnung} \label{sec:GO-Änderung}
+\begin{enumerate}
+	\item Die Geschäftsordnung wird mit Zweidrittelmehrheit aller FSR-Mitglieder beschlossen.
+	\item Änderungen der Geschäftsordnung können ebenfalls nur mit Zweidrittelmehrheit aller FSR-Mitglieder beschlossen werden.
+\end{enumerate}
+
+\section{Inkrafttreten}
+Die Geschäftsordnung des Fachschaftsrats Physik der WWU tritt durch Beschluss des Fachschaftsrats und durch öffentlichen Aushang am \formatdate{1}{1}{2015} in Kraft.
+
+\end{document}
