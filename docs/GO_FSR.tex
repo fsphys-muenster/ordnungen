@@ -1,5 +1,5 @@
-% Autor: Simon May
-% Datum: 2015-01-19
+% Autor: Simon May; Maik Stappers
+% Datum: 2015-01-19 erweitert am 15.04.2015
 
 %%% Pakete & Klassen
 % Verwendung von KOMA-Script
@@ -30,7 +30,7 @@
 	\setmainlanguage{german}
 \else
 	% Silbentrennung, sprachspezifische Einstellungen
-	\usepackage{babel}
+	\usepackage[ngerman]{babel}
 	% Mögliche darstellbare Zeichen (Umlaute, Sonderzeichen...)
 	\usepackage[T1]{fontenc}
 	% Zeichenkodierung der TeX-Datei
@@ -40,6 +40,7 @@
 	% führt Befehle für Sonderzeichen ein
 	\usepackage{textcomp}
 \fi
+\usepackage{ulem}
 % Einige LaTeX-Bugs beheben
 \usepackage{fixltx2e}
 % Für Kopf-/Fußzeile etc.
@@ -95,7 +96,7 @@
 \title{Geschäftsordnung}
 \subtitle{des Fachschaftsrats Physik\\
 der Westfälischen Wilhelms-Universität Münster}
-\date{in der Fassung vom \formatdate{14}{1}{2015}}
+\date{in der Fassung vom \formatdate{15}{4}{2015}}
 \author{}
 
 \begin{document}
@@ -158,13 +159,26 @@ Die Aufgaben der Fachschaft sind in §~20 der Satzung der Studierendenschaft auf
 \label{sec:abstimmungen}
 \begin{enumerate}
 	\item Jedes FSR-Mitglied besitzt eine Stimme. Stimmberechtigt sind alle gewählten Mitglieder des FSR. Der FSR kann weiteren Mitgliedern der Fachschaft das Stimmrecht erteilen.
-	\item Der FSR ist beschlussfähig, wenn 50\,\% aller FSR-Mitglieder anwesend sind.
+	\item Kann auf einer Sitzung des FSR über Anträge, die aufgrund ihrer Dringlichkeit nicht auf die nächste Sitzung verschoben werden können, wegen Beschlussunfähigkeit nicht abgestimmt werden, so sind diese Anträge schriftlich abzustimmen.
+	\item Ist eine Angelegenheit wegen Beschlussunfähigkeit zurückgestellt worden, so ist der FSR in der 	zur Beratung derselben Angelegenheit einberufenen Sondersitzung unabhängig von der Zahl der erschienenen Mitglieder beschlussfähig. In der Ladung muss hierauf ausdrücklich hingewiesen werden. 
 	\item Ist ein TOP zur Entscheidung reif, so eröffnet die Redeleitung nach Abfragen der Anträge die Abstimmung. Anträge zum Abstimmungsgegenstand sind von diesem Zeitpunkt an nicht mehr zulässig. Das Recht auf anschließende Anträge zur Geschäftsordnung bleibt unberührt.
 	\item Über weitergehende Anträge wird zuerst abgestimmt. Falls es inhaltlich nicht zu klären ist, entscheidet die Reihenfolge der Antragsstellung.
 	\item Änderungsvorschläge zu einem Sachantrag sind vor dem Hauptantrag zur Abstimmung zu stellen. Soweit der FSR den Änderungsanträgen zustimmt oder sie von der Antragstellerin oder dem Antragsteller übernommen werden, wird der Hauptantrag in der geänderten Fassung zur Abstimmung gestellt.
 	\item Im Normalfall wird in der FSR-Sitzung durch Handzeichen abgestimmt. Auf Antrag einer stimmberechtigten Person muss eine geheime Abstimmung durchgeführt werden.
 	\item Ein Antrag wird (falls nicht anders durch die GO geregelt) bei einer einfachen Mehrheit von Ja-Stimmen angenommen. Bei gleich vielen Ja- und Nein-Stimmen gilt ein Antrag als abgelehnt. Liegen mehr Enthaltungen als Ja-Stimmen vor, muss die Abstimmung einmal wiederholt werden. Bei einer wiederholten Abstimmung ist ein Antrag unabhängig von der Zahl der Enthaltungen angenommen, wenn mehr Ja- als Nein-Stimmen vorliegen.
 	\label{item:abstimmungsmodus}
+\end{enumerate}
+
+\section{Schriftliche Abstimmungen}
+\label{sec:schriftlich}
+\begin{enumerate}
+	\item Wird eine geheime Abstimmung gewünscht, so kann die Abstimmung nicht schriftlich stattfinden. In dringenden Fällen ist eine Sondersitzung des FSR einzuberufen.
+	\item Die/der Vorsitzende hat bei jeder schriftlichen Abstimmung dafür Sorge zu tragen, dass die zur Abstimmung stehenden Anträge sowie die Art der Stimmabgabe klar erkennbar sind. Die Willensäußerungen der Mitglieder des FSR müssen ihre Haltung zum verlangten Beschluss eindeutig erkennen lassen.
+	\item Die Willensäußerungen müssen mindestens bis zur nächsten regulären Sitzung des FSR archiviert, auf Verlangen eines Mitglieds vorgelegt und dem Protokoll der nächsten regulären Sitzung beigefügt werden.
+	\item Schriftliche Abstimmungen sollen möglichst zügig abgewickelt werden, jedoch muss mindestens 3 Tage auf Antworten der Mitglieder gewartet werden.
+	\item Das Verfahren der schriftlichen Abstimmung gilt als abgeschlossen, wenn die für die Annahme oder Ablehnung des zur Abstimmung gestellten Antrags erforderliche Mehrheit der abgegebenen Stimmen erreicht ist und die angesetzte Frist abgelaufen ist.
+	\item Bei einer schriftlichen Abstimmung ist ein Antrag unabhängig von der Zahl der Enthaltungen angenommen, wenn mehr Ja- als Nein-Stimmen vorliegen.
+	
 \end{enumerate}
 
 \section{Protokolle}
@@ -210,11 +224,14 @@ Die Aufgaben der Fachschaft sind in §~20 der Satzung der Studierendenschaft auf
 \begin{enumerate}
 	\item Die Geschäftsordnung wird mit Zweidrittelmehrheit aller FSR-Mitglieder beschlossen.
 	\item Änderungen der Geschäftsordnung können ebenfalls nur mit Zweidrittelmehrheit aller FSR-Mitglieder beschlossen werden.
+	\item Anträge zur Änderung der Geschäftsordnung müssen zwei Wochen vor dem beabsichtigten Abstimmungstermin allen Mitgliedern des FSR zugänglich gemacht werden. Eine Abstimmung per E-Mail ist nicht möglich, damit eine Aussprache vor der Abstimmung stattfinden kann.
 \end{enumerate}
 
 \section{Inkrafttreten}
 Die Geschäftsordnung des Fachschaftsrats Physik der WWU tritt durch Beschluss des Fachschaftsrats und durch öffentlichen Aushang am \formatdate{1}{1}{2015} in Kraft.
 
 Die erste Änderung der Geschäftsordnung des Fachschaftsrats Physik der WWU tritt durch Beschluss des Fachschaftsrats und durch öffentlichen Aushang am \formatdate{14}{1}{2015} in Kraft. Gleichzeitig tritt die Geschäftsordnung vom \formatdate{1}{1}{2015} außer Kraft.
+
+Die zweite Änderung der Geschäftsordnung des Fachschaftsrats Physik der WWU tritt durch Beschluss des Fachschaftsrats und durch öffentlichen Aushang am \formatdate{15}{4}{2015} in Kraft. Gleichzeitig tritt die Geschäftsordnung vom \formatdate{14}{1}{2015} außer Kraft.
 
 \end{document}
