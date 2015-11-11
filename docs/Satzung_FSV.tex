@@ -1,5 +1,5 @@
-% Autor: Simon May, Maik stappers
-% Datum: 2014-12-26
+% Autor: Simon May; Maik Stappers
+% Datum: 2014-12-26, Änderung 10.11.2015
 
 %%% Pakete & Klassen
 % Verwendung von KOMA-Script
@@ -65,6 +65,9 @@
 % Verlinkung, Querverweise können im PDF angeklickt werden
 \usepackage[bookmarksnumbered, unicode]{hyperref}
 
+\usepackage[deletedmarkup=xout]{changes} %Erlaubt das markieren von Änderungen
+\usepackage{color} %Ändern von Farben
+
 %%% Einstellungen
 % Anführungszeichen automatisch umwandeln
 \MakeOuterQuote{"}
@@ -73,12 +76,12 @@
 	% Links/Verweise in PDF mit Kasten der Dicke 0.5pt versehen
 	pdfborder={0 0 0.5},
 	pdfauthor={Fachschaftsvertretung Physik der WWU Münster},
-	pdftitle={Satzung der Fachschaftsvertretung Physik der Westfälischen Wilhelms-Universität Münster},
+	pdftitle={Fachschaftsordnung der Fachschaft Physik der Westfälischen Wilhelms-Universität Münster},
 	pdfkeywords={Fachschaftsvertretung, FSV, WWU, Münster, Satzung}
 }
 
 % Kopfzeile
-\chead{Satzung der FSV Physik der Westfälischen Wilhelms-Universität Münster}
+\chead{\replaced{Fachschaftsordnung}{Satzung} der Fachschaft\deleted{svertretung} Physik der Westfälischen Wilhelms-Universität Münster}
 \pagestyle{scrheadings}
 
 % Darstellung von sections anpassen
@@ -91,10 +94,10 @@
 \titlehead{\vspace*{-2cm}
 \centering
 \includegraphics[width=0.8\textwidth]{Fachschaft_Physik_Logo_v2014_2.pdf}}
-\title{Satzung}
-\subtitle{der Fachschaftsvertretung Physik\\
+\title{\replaced{Fachschafsordnung}{Satzung}}
+\subtitle{der Fachschaft\deleted{svertretung} Physik\\
 der Westfälischen Wilhelms-Universität Münster}
-\date{in der Fassung vom \formatdate{17}{12}{2014}}
+\date{in der Fassung vom \formatdate{11}{11}{20114}
 \author{}
 
 \begin{document}
@@ -103,33 +106,32 @@ der Westfälischen Wilhelms-Universität Münster}
 \maketitle
 
 \section{Präambel}
-Hiermit TEST sich die Fachschaftsvertretung Physik (FSV) der Westfälischen Wilhelms-Universi\-tät Münster (WWU) auf Grundlage von §~22 Abs.~4--5 der Satzung der Studierendenschaft der WWU eine Satzung im Rahmen der geltenden Gesetze und der Satzung der Studierendenschaft. Sie regelt zusätzliche Angelegenheiten der Fachschaft und ihrer Organe.
+Hiermit gibt sich die Fachschaftsvertretung Physik (FSV) der Westfälischen Wilhelms-Universi\-tät Münster (WWU) auf Grundlage von §~\replaced{41}{22} Abs.~\replaced{1}{4--5} der Satzung der Studierendenschaft der WWU eine Fahschaftsordnung (FO) im Rahmen der geltenden Gesetze und der Satzung der Studierendenschaft. Sie regelt ergänzend die Angelegenheiten der Fachschaft \deleted{und ihrer Organe}.
 
-Die offizielle Bezeichnung der Fachschaft ist zusätzlich \textbf{111} (§~19 Abs.~2 Satzung der Studierendenschaft).
+\deleted{Die offizielle Bezeichnung der Fachschaft ist zusätzlich \textbf{111} (§~19 Abs.~2 Satzung der Studierendenschaft).}
 
-\section{Mitgliedschaft}
-\label{sec:Mitgliedschaft}
+\section{\deleted{Mitgliedschaft}}
 \begin{enumerate}
-	\item Gemäß §~19 Abs.~1 der Satzung der Studierendenschaft ist jede/jeder Studierende Mitglied der Fachschaft Physik der WWU, wenn er/sie mit dem Hauptfach Physik immatrikuliert ist. \label{item:Mitgliedschaft-Wahl}
-	\item Ausschließlich ordentliche Mitglieder gemäß \ref{sec:Mitgliedschaft} Abs.~\ref{item:Mitgliedschaft-Wahl} haben das aktive und passive Wahlrecht zur Fachschaftsvertretung. Gast- und Zweithörer haben kein Wahlrecht zur Fachschaftsvertretung Physik. Näheres regelt die Wahlordnung der Studierendenschaft.
+	\item \deleted{Gemäß §~xx Abs.~x der Satzung der Studierendenschaft ist jede/jeder Studierende Mitglied der Fachschaft Physik der WWU, wenn er/sie mit dem Hauptfach Physik immatrikuliert ist.}
+	\item \deleted{Ausschließlich ordentliche Mitglieder gemäß §~2 Abs.~1 haben das aktive und passive Wahlrecht zur Fachschaftsvertretung. Gast- und Zweithörer haben kein Wahlrecht zur Fachschaftsvertretung Physik. Näheres regelt die Wahlordnung der Studierendenschaft.}
 \end{enumerate}
-
+\setcounter{section}{1}
 \section{Organe der Fachschaft}
-Die Organe der Fachschaft sind gemäß §~21 Abs.~1 der Satzung der Studierendenschaft:
+Die \replaced{Gremien}{Organe} der Fachschaft sind gemäß der Satzung der Studierendenschaft:
 \begin{enumerate}
-	\item die Fachschaftsvertretung (FSV) (§~22 Satzung der Studierendenschaft),
-	\item der Fachschaftsrat (FSR) (§~23 Satzung der Studierendenschaft) und 
-	\item die Fachschaftsvollversammlung (FVV) (§~24 Satzung der Studierendenschaft).
+	\item die Fachschaftsvertretung (FSV) (§~\replaced{37}{22} Satzung der Studierendenschaft),
+	\item der Fachschaftsrat (FSR) (§~\replaced{38}{23} Satzung der Studierendenschaft) und 
+	\item die Fachschaftsvollversammlung (FVV) (§~\replaced{39}{24} Satzung der Studierendenschaft).
 \end{enumerate}
 
 \section{Fachschaftsvertretung}
-Die Amtszeit, Zusammensetzung, Einberufung, Aufgaben und Beschlussfassung der FSV sind in §~22 der Satzung der Studierendenschaft geregelt. Näheres zur Wahl der Fachschaftsvertretungen regelt die Wahlordnung.
+Die Amtszeit, Zusammensetzung, Einberufung, Aufgaben und Beschlussfassung der FSV sind in §~\replaced{37}{22} der Satzung der Studierendenschaft geregelt. Näheres zur Wahl der Fachschaftsvertretungen regelt die Wahlordnung.
 
 Ergänzend gibt sich die FSV die zusätzlichen Regelungen:
 \begin{enumerate}
-	\item Die FSV wählt auf ihrer konstituierenden Sitzung den Fachschaftsrat. Die Sitzung ist öffentlich. Der FSV wird empfohlen, nur Personen in den FSR zu wählen, die mindestens das jeweilige laufende Semester aktiv in der Fachschaft mitgearbeitet haben.
-	\item Die Wahl des FSR erfoa,<sccalkhsföiuaeföiuEAFHOIAUDÄQOPIDpaoidkäasokpdäaKODlgt mit Handzeichen. Auf Antrag einer anwesenden wahlberechtigten Person muss eine geheime Wahl stattfinden. Es kann auch über die Liste als Ganzes abgestimmt werden.
-	\item Gemäß §~22 Abs.~6 der Satzung der Studierendenschaft gibt sich die Fachschaftsvertretung Physik eine Geschäftsordnung.
+	\item Die FSV wählt auf ihrer konstituierenden Sitzung den Fachschaftsrat. Die Sitzung ist öffentlich. Der FSV wird empfohlen, nur Personen in den FSR zu wählen, die mindestens \replaced{im}{das} jeweilige laufende Semester aktiv in der Fachschaft mitgearbeitet haben.
+	\item Die Wahl des FSR \added{findet unter Ausschluss der Öffentlichkeit statt und }erfolgt \replaced{durch}{mit} Handzeichen. Auf Antrag einer anwesenden wahlberechtigten Person muss eine geheime Wahl stattfinden. Es kann auch über die Liste als Ganzes abgestimmt werden.
+	\item \replaced{Die Fachschaftsvertretung gibt sich eine Geschäftsordnung}{Gemäß §~22 Abs.~6 der Satzung der Studierendenschaft gibt sich die Fachschaftsvertretung Physik eine Geschäftsordnung.}
 \end{enumerate}
 
 \section{Aufgaben der Fachschaft}
@@ -138,8 +140,8 @@ Ergänzend gibt sich die FSV die zusätzlichen Regelungen:
 	\item Für die Studierenden im Studienfach Geophysik ist der FSR Geophysik Ansprechpartner. Eine ausführliche Kooperation mit dem FSR Geophysik wird angestrebt.
 \end{enumerate}
 
-\section{Arbeit des Fachschaftsrats}
-§~23 der Satzung der Studierendenschaft regelt die Zusammensetzung des Fachschaftsrats (FSR). Zusätzlich gilt für die Arbeit des Fachschaftsrats Folgendes:
+\section{Arbeit \added{und Zusammensetzung} des Fachschaftsrats}
+§~xx der Satzung der Studierendenschaft regelt die Zusammensetzung des Fachschaftsrats (FSR). Zusätzlich gilt für die Arbeit des Fachschaftsrats Folgendes:
 
 Der FSR nimmt die Aufgaben der Fachschaft entsprechend der Geschäftsordnung der Fachschaftsvertretung Physik und der Satzung der Studierendenschaft wahr. Ergänzend wird dem FSR aufgetragen, der FSV zu ihrer konstituierenden Sitzung einen Finanzbericht vorzulegen. Dieser Finanzbericht soll Auskunft über alle Einnahmen und Ausgaben des FSR während seiner Amtszeit geben.
 
