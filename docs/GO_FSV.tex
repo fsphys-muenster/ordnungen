@@ -1,5 +1,5 @@
-% Autor: Simon May
-% Datum: 2015-03-03
+% Autor: Simon May, Maik Stappers
+% Datum: 2015-03-03, geändert 2015-11-16
 
 %%% Pakete & Klassen
 % Verwendung von KOMA-Script
@@ -66,7 +66,8 @@
 ]{geometry}
 % Verlinkung, Querverweise können im PDF angeklickt werden
 \usepackage[bookmarksnumbered, unicode]{hyperref}
-
+\usepackage{changes}
+\setdeletedmarkup{\textcolor{red}{\sout{#1}}}
 %%% Einstellungen
 % Anführungszeichen automatisch umwandeln
 \MakeOuterQuote{"}
@@ -96,7 +97,7 @@
 \title{Geschäftsordnung}
 \subtitle{der Fachschaftsvertretung Physik\\
 der Westfälischen Wilhelms-Universität Münster}
-\date{in der Fassung vom \formatdate{15}{4}{2015}}
+\date{in der Fassung vom \formatdate{0}{12}{2015}}
 \author{}
 
 \begin{document}
@@ -104,9 +105,11 @@ der Westfälischen Wilhelms-Universität Münster}
 % Titel mit Logo
 \maketitle
 
-\section{Allgemeines}
-Diese Geschäftsordnung~(GO) basiert auf §~4 Abs.~3 der Satzung der Fachschaftsvertretung Physik im Fachbereich Physik der Westfälischen Wilhelms-Universität Münster vom 17.12.2014 und auf §~22 der Satzung der Studierendenschaft der Westfälischen Wilhelms-Universität Münster vom 22.10.2002.
+\section{\deleted{Allgemeines}}
+\textcolor{green}{Diesen Paragraphen braucht kein Mensch}
+\deleted{Diese Geschäftsordnung~(GO) basiert auf §~4 Abs.~3 der Satzung der Fachschaftsvertretung Physik im Fachbereich Physik der Westfälischen Wilhelms-Universität Münster vom 17.12.2014 und auf §~22 der Satzung der Studierendenschaft der Westfälischen Wilhelms-Universität Münster vom 22.10.2002.}
 
+\setcounter{section}{0}
 \section{Einberufung der FSV-Sitzungen}
 \begin{enumerate}
 	\item Jedes Mitglied der FSV kann eine FSV-Sitzung einberufen.
@@ -116,7 +119,7 @@ Diese Geschäftsordnung~(GO) basiert auf §~4 Abs.~3 der Satzung der Fachschafts
 \section{Durchführung der FSV-Sitzungen}
 \begin{enumerate}
 	\item Die Eröffnung der Sitzung obliegt dem Mitglied der FSV, das die Sitzung einberufen hat.
-	\item Zu Beginn der Sitzung werden folgende Dinge in folgender Reihenfolge festgestellt bzw.\ durch Wahl zugewiesen:
+	\item Zu Beginn der Sitzung werden folgende Dinge in folgender Reihenfolge festgestellt bzw.\ \added{(}durch Wahl\added{)} zugewiesen:
 	\begin{enumerate}
 		\item Beschlussfähigkeit
 		\item Redeleitung
@@ -146,7 +149,7 @@ Diese Geschäftsordnung~(GO) basiert auf §~4 Abs.~3 der Satzung der Fachschafts
 \label{sec:abstimmungen}
 \begin{enumerate}
 	\item Jedes FSV-Mitglied besitzt eine Stimme. Stimmberechtigt sind alle gewählten Mitglieder der FSV.
-	\item Gemäß §~42 Abs.~1 der Satzung der Studierendenschaft ist die FSV beschlussfähig, wenn mindestens die Hälfte aller FSV-Mitglieder anwesend ist. Außerdem gilt demnach die Beschlussfähigkeit so lange als gegeben, bis auf Antrag eines Mitglieds die Beschlussunfähigkeit formell festgestellt wird.
+	\item Gemäß §~\replaced{10}{42} Abs.~\replaced{2}{1} der Satzung der Studierendenschaft ist die FSV beschlussfähig, wenn mindestens die Hälfte aller FSV-Mitglieder anwesend ist. Außerdem gilt demnach die Beschlussfähigkeit so lange als gegeben, bis auf Antrag eines Mitglieds die Beschlussunfähigkeit formell festgestellt wird.
 	\item Ist ein TOP zur Entscheidung reif, so eröffnet die Redeleitung nach Abfragen der Anträge die Abstimmung. Anträge zum Abstimmungsgegenstand sind von diesem Zeitpunkt an nicht mehr zulässig. Das Recht auf anschließende Anträge zur Geschäftsordnung bleibt unberührt.
 	\item Im Normalfall wird in der FSV-Sitzung durch Handzeichen abgestimmt. Auf Antrag einer stimmberechtigten Person muss eine geheime Abstimmung durchgeführt werden.
 	\item Ein Antrag wird (falls nicht anders durch die GO geregelt) bei einer einfachen Mehrheit von Ja-Stimmen angenommen. Bei einer Mehrheit von Nein-Stimmen oder gleich vielen Ja- und Nein-Stimmen gilt ein Antrag als abgelehnt.
@@ -158,20 +161,21 @@ Diese Geschäftsordnung~(GO) basiert auf §~4 Abs.~3 der Satzung der Fachschafts
 \begin{enumerate}
 	\item Jedes Mitglied der FSV kann sich und andere Mitglieder der Fachschaft Physik zur Wahl vorschlagen.
 	\item Wahlen werden von der Redeleitung durchgeführt. Sollte die Redeleitung selbst zur Wahl stehen, so wird ein Wahlleiter für diese Wahl gewählt.
-	\item Gemäß §~4 Abs.~2 der Satzung der FSV erfolgt die Wahl des Fachschaftsrats (FSR) mit Handzeichen. Auf Antrag einer anwesenden wahlberechtigten Person muss eine geheime Wahl stattfinden. Es kann auch über eine Liste als Ganzes abgestimmt werden.
-	\item Wahlen erfolgen nach den Regeln für Abstimmungen in \ref{sec:abstimmungen}. Ein anderer Wahlmodus ist im Einzelfall möglich; über diesen muss dann zunächst abgestimmt werden.
+	\item Gemäß \replaced{§~3 Abs.~2 der Fachschaftsordnung der Fachschaft Physik}{§~4 Abs.~2 der Satzung der FSV} erfolgt die Wahl des Fachschaftsrats (FSR) mit Handzeichen \added{unter Ausschluss der Öffentlichkeit}. Auf Antrag einer anwesenden wahlberechtigten Person muss eine geheime Wahl stattfinden. Es kann auch über eine Liste als Ganzes abgestimmt werden. \textcolor{green}{Personalentscheidungen finden unter Ausschluss der Öffentlichkeit statt.}
+	\item \added{Bei Personenwahlen können die Mitglieder der FSV für eine*n Kandidat*in stimmen oder sich der Stimme enthalten. Bei Listenwahlen können die Mitglieder der FSV für eine Vorschlagsliste stimmen oder sich ihrer Stimme enthalten, steht nur eine Liste zur Wahl, so können die Mitglieder der FSV zusätzlich gegen die Vorschlagsliste stimmen. In diesem Falle gelten die in §~3 Abs.~5 beschrieben Kriterien über die Wahl der Liste.} \textcolor{green}{vgl. §~7 Abs~1 Satzung der Studierendenschaft, incl. kleiner Anpassungen, da wir ja immer nur eine Liste haben.}
+	\item \replaced{Durch Personenwahl ist gewählt, wer eine absolute Mehrheit erreicht. Ergibt sich im ersten Wahlgang keine absolute Mehrheit, so folgt ein zweiter Wahlgang. Ergibt sich auch im zweiten Wahlgang keine absolute Mehrheit, findet ein dritter Wahlgang statt. Im dritten Wahlgang ist gewählt, wer eine relative Mehrheit erhält. Vereinigen mehrere Kandidat*innen im dritten Wahlgang gleich viele und jeweils die meisten Stimmen auf sich, findet eine Stichwahl zwischen diesen statt. Vereinigen auch in der Stichwahl mehrere Kandidat*innen gleich viele und jeweils die meisten Stimmen auf sich, entschiedet zwischen ihnen das Los.}{Wahlen erfolgen nach den Regeln für Abstimmungen in §~4. Ein anderer Wahlmodus ist im Einzelfall möglich; über diesen muss dann zunächst abgestimmt werden.} \textcolor{green}{So will es die Satzung der Studierendenschaft (§~7 Abs.~7)}
 \end{enumerate}
 
 \section{Protokolle}
 \begin{enumerate}
 	\item Von jeder Sitzung wird ein Protokoll durch den gewählten Protokollanten erstellt.
-	\item Das Protokoll wird jedem Mitglied der FSV zur Verfügung gestellt.
+	\item Das Protokoll wird jedem Mitglied der FSV \added{und dem FSR} zur Verfügung gestellt. \textcolor{green}{Mitglieder des FSR sind Beratende Mitglieder der FSV §~37 Abs.~3 Satzung der Studierendenschaft}
 \end{enumerate}
 
 \section{Beschluss und Änderung der Geschäftsordnung}
 Die Geschäftsordnung und deren Änderungen können nur mit Zweidrittelmehrheit aller FSV-Mitglieder beschlossen werden.
 
 \section{Inkrafttreten}
-Die Geschäftsordnung der Fachschaftsvertretung Physik der WWU tritt durch Beschluss der Fachschaftsvertretung und durch öffentlichen Aushang am \formatdate{15}{4}{2015} in Kraft.
+Die Geschäftsordnung der Fachschaftsvertretung Physik der WWU tritt durch Beschluss der Fachschaftsvertretung und durch öffentlichen Aushang am \formatdate{0}{12}{2015} in Kraft.
 
 \end{document}
