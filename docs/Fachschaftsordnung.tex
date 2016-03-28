@@ -1,6 +1,3 @@
-% Autor: Simon May; Maik Stappers
-% Datum: 2014-12-26, Änderung 07.01.2016
-
 %%% Pakete & Klassen
 % Verwendung von KOMA-Script
 \documentclass[
@@ -24,7 +21,6 @@
 \ifLuaTeX
 	% Einstellungen für Schriftart
 	\usepackage{fontspec}
-	\defaultfontfeatures{Ligatures=TeX}
 	% Silbentrennung, sprachspezifische Einstellungen
 	\usepackage{polyglossia}
 	\setmainlanguage{german}
@@ -65,10 +61,6 @@
 % Verlinkung, Querverweise können im PDF angeklickt werden
 \usepackage[bookmarksnumbered, unicode]{hyperref}
 
-\usepackage[deletedmarkup=sout]{changes} %Erlaubt das markieren von Änderungen
-\usepackage{color} %Ändern von Farben
-\setdeletedmarkup{\textcolor{black}{\sout{#1}}}
-\setaddedmarkup{\textcolor{black}{\textit{#1}}}
 %%% Einstellungen
 % Anführungszeichen automatisch umwandeln
 \MakeOuterQuote{"}
@@ -107,7 +99,7 @@ der Westfälischen Wilhelms-Universität Münster}
 \maketitle
 
 \section{Präambel}
-Hiermit gibt sich die Fachschaftsvertretung Physik (FSV) der Westfälischen Wilhelms-Universi\-tät Münster (WWU) auf Grundlage von §~41 Abs.~1 der Satzung der Studierendenschaft der WWU eine Fahschaftsordnung (FO) im Rahmen der geltenden Gesetze und der Satzung der Studierendenschaft. Sie regelt ergänzend die Angelegenheiten der Fachschaft.
+Hiermit gibt sich die Fachschaftsvertretung Physik (FSV) der Westfälischen Wilhelms-Universi\-tät Münster (WWU) auf Grundlage von §~41 Abs.~1 der Satzung der Studierendenschaft der WWU eine Fachschaftsordnung (FO) im Rahmen der geltenden Gesetze und der Satzung der Studierendenschaft. Sie regelt ergänzend die Angelegenheiten der Fachschaft.
 
 \setcounter{section}{1}
 \section{Gremien der Fachschaft}
@@ -125,13 +117,13 @@ Ergänzend gibt sich die FSV die zusätzlichen Regelungen:
 \begin{enumerate}
 	\item Die FSV wählt auf ihrer konstituierenden Sitzung den Fachschaftsrat. Die Sitzung ist öffentlich. Der FSV wird empfohlen, nur Personen in den FSR zu wählen, die mindestens im jeweilige laufende Semester aktiv in der Fachschaft mitgearbeitet haben.
 	\item Die Wahl des FSR erfolgt durch Handzeichen. Auf Antrag einer anwesenden wahlberechtigten Person muss eine geheime Wahl stattfinden. Es kann auch über die Liste als Ganzes abgestimmt werden.
-	\item Die Fachschaftsvertretung gibt sich eine Geschäftsordnung
+	\item Die Fachschaftsvertretung gibt sich eine Geschäftsordnung.
 \end{enumerate}
 
 \section{Aufgaben der Fachschaft}
 \begin{enumerate}
-	\item Die Aufgaben der Fachschaft sind in §~\replaced{36}{20} der Satzung der Studierendenschaft aufgeführt.
-	\item Zusätzlich wird eine Enge Kooperation mit der Fachschaft Geophysik angestrebt.
+	\item Die Aufgaben der Fachschaft sind in §~36 der Satzung der Studierendenschaft aufgeführt.
+	\item Zusätzlich wird eine enge Kooperation mit der Fachschaft Geophysik angestrebt.
 \end{enumerate}
 
 \section{Zusammensetzung des Fachschaftsrat}
@@ -145,7 +137,7 @@ Ergänzend gibt sich die FSV die zusätzlichen Regelungen:
 		\item Erstsemesterarbeit
 	\end{enumerate}
 	\item Die Fachschaftsvertretung kann bei der Wahl des Fachschaftsrates weitere Geschäftsbereiche einrichten.
-	\item Entsprechend §~38 Satzung der Studierendenschaft, dürfen die Geschäftsbereiche "Vorsitz" und "Finanzen" nicht mit den gleichen Personen besetzt werden.
+	\item Entsprechend §~38 Satzung der Studierendenschaft dürfen die Geschäftsbereiche "Vorsitz" und "Finanzen" nicht mit der gleichen Person besetzt werden.
 	\item Der Geschäftsbereich "Vorsitz" besteht aus genau zwei Personen, der/dem Vorsitzenden des Fachschaftsrats und seinem/ihrem Stellvertretenden.
 	\item Ein FSR-Mitglied ist für die Verwaltung der Schlüssel zum Fachschaftsraum zuständig (Schlüsselwart).
 \end{enumerate}
@@ -166,8 +158,9 @@ Der FSR nimmt die Aufgaben der Fachschaft entsprechend der Satzung der Studieren
 
 \begin{enumerate}
 	\item Die Finanzmittel der Fachschaft Physik werden durch den AStA bewirtschaftet. Ausgaben werden durch die Finanzräte (Mitglieder des Geschäftsbereich "Finanzen") beantragt. (§~40 Abs.~2 Satzung der Studierendenschaft)
-	\item Die Finanzräte dürfen nur nach vorherigem Beschluss eines Gremiums der Fachschaft Physik die Auszahlung der Finanzmittel beim AStA beantragen.\label{Finanzen_2}
-	\item Bei Anträgen auf Auszahlung von Beträgen unter 20€ kann abweichend von §~6 Abs.~2 auf einen Beschluss eines Gremiums der Fachschaft Physik verzichtet werden.
+	\item Die Finanzräte dürfen nur nach vorherigem Beschluss eines Gremiums der Fachschaft Physik die Auszahlung der Finanzmittel beim AStA beantragen.
+	\label{Finanzen_2}
+	\item Bei Anträgen auf Auszahlung von Beträgen unter 20\,€ kann abweichend von §~6 Abs.~2 auf einen Beschluss eines Gremiums der Fachschaft Physik verzichtet werden.
 \end{enumerate}
 
 \section{Fachschaftsraum}
@@ -201,4 +194,5 @@ Für die FVV ist die Geschäftsordnung des Fachschaftrats Physik anzuwenden, ins
 
 \section{Inkrafttreten}
 Die Fachschaftsordnung der Fachschaft Physik der Westfälischen Wilhelms Universität tritt durch Votum mit Zweidrittelmehrheit der Mitgliedern der Fachschaftsvertretung und durch öffentlichen Aushang am \formatdate{07}{01}{2016} in Kraft.
+
 \end{document}
