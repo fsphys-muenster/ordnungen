@@ -1,0 +1,76 @@
+%%% Pakete & Klassen
+% Verwendung von KOMA-Script
+\documentclass[
+	% Papierformat
+	a4paper,
+	% Schriftgröße
+	12pt,
+	% einseitiges Layout
+	oneside,
+	% Abstand zwischen Absätzen statt Einrücken
+	parskip=half-,
+	% Linie unter der Kopfzeile
+	headsepline,
+	% deutsches Dokument (neue deutsche Rechtschreibung)
+	ngerman,
+	% Kleinere Seitenränder
+	DIV=15
+]{scrartcl}
+\usepackage{iftex}
+\ifLuaTeX
+	% Einstellungen für Schriftart
+	\usepackage{fontspec}
+	% Silbentrennung, sprachspezifische Einstellungen
+	\usepackage{polyglossia}
+	\setmainlanguage{german}
+	\usepackage{selnolig}
+\else
+	% Silbentrennung, sprachspezifische Einstellungen
+	\usepackage{babel}
+	% Mögliche darstellbare Zeichen (Umlaute, Sonderzeichen…)
+	\usepackage[T1]{fontenc}
+	% Zeichenkodierung der TeX-Datei
+	\usepackage[utf8]{inputenc}
+	% Schriftart
+	\usepackage{lmodern}
+	% führt Befehle für Sonderzeichen ein
+	\usepackage{textcomp}
+\fi
+\usepackage{microtype}
+% Für Kopf-/Fußzeile etc.
+\usepackage{scrlayer-scrpage}
+% Farben ermöglichen
+\usepackage{xcolor}
+% Paket für Bilder-Einbindung (EPS, PNG, JPG, PDF)
+\usepackage{graphicx}
+% Formatierung von Daten
+\usepackage[useregional]{datetime2}
+% Einstellungen für Aufzählungen
+\usepackage{enumitem}
+% „Schlaue“ Anführungszeichen
+\usepackage{csquotes}
+% Verlinkung, Querverweise können im PDF angeklickt werden
+\usepackage[bookmarksnumbered, unicode]{hyperref}
+
+%%% Einstellungen
+% Anführungszeichen automatisch umwandeln
+\MakeOuterQuote{"}
+
+\hypersetup{
+	% Links/Verweise in PDF mit Kasten der Dicke 0.5pt versehen
+	pdfborder={0 0 0.5},
+}
+
+% Darstellung von sections anpassen
+\renewcommand{\thesection}{§~\arabic{section}}
+
+\titlehead{\vspace*{-2cm}%
+	\centering
+	\includegraphics[width=0.8\textwidth]{Fachschaft_Physik_Logo_v2014_2.pdf}%
+}
+
+%%% Neue Befehle
+% Befehl zur Darstellung von E-Mail-Adressen
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+% Semantischer Befehl für starke Betonung
+\newcommand{\strong}{\textbf}

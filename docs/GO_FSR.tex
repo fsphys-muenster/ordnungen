@@ -1,95 +1,21 @@
-%%% Pakete & Klassen
-% Verwendung von KOMA-Script
-\documentclass[
-	% Papierformat
-	a4paper,
-	% Schriftgröße
-	12pt,
-	% einseitiges Layout
-	oneside,
-	% Abstand zwischen Absätzen statt Einrücken
-	parskip=half-,
-	% Papiergröße korrekt ins Dokument schreiben
-	pagesize,
-	% Linie unter der Kopfzeile
-	headsepline,
-	% deutsches Dokument (neue deutsche Rechtschreibung)
-	german,
-	ngerman
-]{scrartcl}
-\usepackage{iftex}
-\ifLuaTeX
-	% Einstellungen für Schriftart
-	\usepackage{fontspec}
-	% Silbentrennung, sprachspezifische Einstellungen
-	\usepackage{polyglossia}
-	\setmainlanguage{german}
-\else
-	% Silbentrennung, sprachspezifische Einstellungen
-	\usepackage[ngerman]{babel}
-	% Mögliche darstellbare Zeichen (Umlaute, Sonderzeichen...)
-	\usepackage[T1]{fontenc}
-	% Zeichenkodierung der TeX-Datei
-	\usepackage[utf8]{inputenc}
-	% Schriftart
-	\usepackage{lmodern}
-	% führt Befehle für Sonderzeichen ein
-	\usepackage{textcomp}
-\fi
-% Einige LaTeX-Bugs beheben
-\usepackage{fixltx2e}
-% Für Kopf-/Fußzeile etc.
-\usepackage{scrpage2}
-% Farben ermöglichen
-\usepackage{xcolor}
-% Paket für Bilder-Einbindung (EPS, PNG, JPG, PDF)
-\usepackage{graphicx}
-% Formatierung von Daten
-\usepackage{datetime}
-% Einstellungen für Aufzählungen
-\usepackage{enumitem}
-% "Schlaue" Anführungszeichen
-\usepackage{csquotes}
-% Seitenränder
-\usepackage[
-	left=2cm,
-	right=2cm,
-	top=2cm,
-	bottom=1.3cm,
-	includeheadfoot
-]{geometry}
-% Verlinkung, Querverweise können im PDF angeklickt werden
-\usepackage[bookmarksnumbered, unicode]{hyperref}
+\input{fsphys_ordnungen_header.tex}
 
-%%% Einstellungen
-% Anführungszeichen automatisch umwandeln
-\MakeOuterQuote{"}
-
+% PDF-Metadaten
 \hypersetup{
-	% Links/Verweise in PDF mit Kasten der Dicke 0.5pt versehen
-	pdfborder={0 0 0.5},
 	pdfauthor={Fachschaftsrat Physik der WWU Münster},
-	pdftitle={Geschäftsordnung des Fachschaftsrats Physik der Westfälischen Wilhelms-Universität Münster}
+	pdftitle={Geschäftsordnung des Fachschaftsrats Physik der Westfälischen Wilhelms-Universität Münster},
+	pdfkeywords={Fachschaftsrat, FSR, WWU, Münster, Geschäftsordnung}
 }
 
 % Kopfzeile
-\chead{Geschäftsordnung des FSR Physik der Westfälischen Wilhelms-Universität Münster}
+\ihead{Geschäftsordnung des FSR Physik der Westfälischen Wilhelms-Universität Münster}
 \pagestyle{scrheadings}
 
-% Darstellung von sections anpassen
-\renewcommand{\thesection}{§~\arabic{section}}
-
-% Befehl zur Darstellung von E-Mail-Adressen
-\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
-
 %%% Bestandteile des Titels
-\titlehead{\vspace*{-2cm}
-\centering
-\includegraphics[width=0.8\textwidth]{Fachschaft_Physik_Logo_v2014_2.pdf}}
 \title{Geschäftsordnung}
 \subtitle{des Fachschaftsrats Physik\\
 der Westfälischen Wilhelms-Universität Münster}
-\date{in der Fassung vom \formatdate{11}{01}{2017}}
+\date{in der Fassung vom \DTMdate{2017-01-11}}
 \author{}
 
 \begin{document}
@@ -102,7 +28,7 @@ Das Logo der Fachschaft Physik ist auf allen offiziellen Schriftstücken (Briefe
 
 \section{Einberufung und Vorbereitung der FSR-Sitzungen}
 \begin{enumerate}
-	\item Der Termin für die FSR-Sitzung wird zu Beginn des Semesters von den FSR-Mitgliedern festgelegt.
+	\item Der Termin für die Sitzungen des Fachschaftsrats (FSR) wird zu Beginn des Semesters von den FSR-Mitgliedern festgelegt.
 	\item In der vorlesungsfreien Zeit finden FSR-Sitzungen nur bei konkretem Bedarf statt. Sie werden mindestens eine Woche vorher durch den E-Mail-Verteiler und auf der Internetseite des FSR angekündigt.
 	\item Außerordentliche Sitzungen müssen mindestens zwei Tage vorher aus triftigem Grund einberufen werden. 
 	\item Die Sitzungen sind öffentlich. Auf Antrag eines FSR-Mitglieds und mit einfacher Mehrheit aller anwesenden stimmberechtigten Mitglieder des FSR ist die Sitzung oder einzelne Tagesordnungspunkte nicht öffentlich.
@@ -111,7 +37,6 @@ Das Logo der Fachschaft Physik ist auf allen offiziellen Schriftstücken (Briefe
 \end{enumerate}
 
 \section{Durchführung der FSR-Sitzungen}
-\label{sec:sitzung_durchführung}
 \begin{enumerate}
 	\item Die Eröffnung der Sitzung obliegt dem Vorsitz des FSR oder dessen Vertretung. Sollten Vorsitz und Vertretung nicht anwesend sein, eröffnet das dienstälteste Mitglied des FSR die Sitzung.  
 	\item Zu Beginn der Sitzung werden folgende Dinge festgestellt bzw.\ zugewiesen: Beschlussfähigkeit, Redeleitung, Protokollant, alte Protokolle und Tagesordnung.
@@ -142,7 +67,7 @@ Das Logo der Fachschaft Physik ist auf allen offiziellen Schriftstücken (Briefe
 \begin{enumerate}
 	\item Jedes FSR-Mitglied besitzt eine Stimme. Stimmberechtigt sind alle gewählten Mitglieder des FSR. Der FSR kann weiteren Mitgliedern der Fachschaft das Stimmrecht erteilen.
 	\item Kann auf einer Sitzung des FSR über Anträge, die aufgrund ihrer Dringlichkeit nicht auf die nächste Sitzung verschoben werden können, wegen Beschlussunfähigkeit nicht abgestimmt werden, so sind diese Anträge schriftlich abzustimmen.
-	\item Ist eine Angelegenheit wegen Beschlussunfähigkeit zurückgestellt worden, so ist der FSR in der 	zur Beratung derselben Angelegenheit einberufenen Sondersitzung unabhängig von der Zahl der erschienenen Mitglieder beschlussfähig. In der Ladung muss hierauf ausdrücklich hingewiesen werden. 
+	\item Ist eine Angelegenheit wegen Beschlussunfähigkeit zurückgestellt worden, so ist der FSR in der zur Beratung derselben Angelegenheit einberufenen Sondersitzung unabhängig von der Zahl der erschienenen Mitglieder beschlussfähig. In der Ladung muss hierauf ausdrücklich hingewiesen werden. 
 	\item Ist ein TOP zur Entscheidung reif, so eröffnet die Redeleitung nach Abfragen der Anträge die Abstimmung. Anträge zum Abstimmungsgegenstand sind von diesem Zeitpunkt an nicht mehr zulässig. Das Recht auf anschließende Anträge zur Geschäftsordnung bleibt unberührt.
 	\item Über weitergehende Anträge wird zuerst abgestimmt. Falls es inhaltlich nicht zu klären ist, entscheidet die Reihenfolge der Antragsstellung.
 	\item Änderungsvorschläge zu einem Sachantrag sind vor dem Hauptantrag zur Abstimmung zu stellen. Soweit der FSR den Änderungsanträgen zustimmt oder sie von der Antragstellerin oder dem Antragsteller übernommen werden, wird der Hauptantrag in der geänderten Fassung zur Abstimmung gestellt.
@@ -157,11 +82,10 @@ Das Logo der Fachschaft Physik ist auf allen offiziellen Schriftstücken (Briefe
 	\item Wird eine geheime Abstimmung gewünscht, so kann die Abstimmung nicht schriftlich stattfinden. In dringenden Fällen ist eine Sondersitzung des FSR einzuberufen.
 	\item Die/der Vorsitzende hat bei jeder schriftlichen Abstimmung dafür Sorge zu tragen, dass die zur Abstimmung stehenden Anträge sowie die Art der Stimmabgabe klar erkennbar sind. Die Willensäußerungen der Mitglieder des FSR müssen ihre Haltung zum verlangten Beschluss eindeutig erkennen lassen.
 	\item Die Willensäußerungen müssen mindestens bis zur nächsten regulären Sitzung des FSR archiviert, auf Verlangen eines Mitglieds vorgelegt und dem Protokoll der nächsten regulären Sitzung beigefügt werden.
-	\item Schriftliche Abstimmungen sollen möglichst zügig abgewickelt werden, jedoch muss mindestens so lange auf Antworten der Mitgleider des FSR gewartet werden bis die Entscheidung über den Antrag durch evtl. später eintreffende Stimmen nicht mehr geändert werden kann oder mindestens 3 Tage vegangen sind.
+	\item Schriftliche Abstimmungen sollen möglichst zügig abgewickelt werden, jedoch muss mindestens so lange auf Antworten der Mitglieder des FSR gewartet werden, bis die Entscheidung über den Antrag durch eventuell später eintreffende Stimmen nicht mehr geändert werden kann oder mindestens drei Tage vergangen sind.
 	\item Das Verfahren der schriftlichen Abstimmung gilt als abgeschlossen, wenn die für die Annahme oder Ablehnung des zur Abstimmung gestellten Antrags erforderliche Mehrheit der abgegebenen Stimmen erreicht ist und die angesetzte Frist abgelaufen ist.
 	\item Bei einer schriftlichen Abstimmung ist ein Antrag unabhängig von der Zahl der Enthaltungen angenommen, wenn mehr Ja- als Nein-Stimmen vorliegen.
 	\item Schriftliche Abstimmungen finden per E-Mail statt.
-	
 \end{enumerate}
 
 \section{Protokolle}
@@ -175,17 +99,13 @@ Das Logo der Fachschaft Physik ist auf allen offiziellen Schriftstücken (Briefe
 	\item Das Protokoll gilt als genehmigt, wenn auf der folgenden FSR-Sitzung keine Gegenrede erhoben wird.
 \end{enumerate}
 
-
-
-
-
 \section{Fachschaftenkonferenz (FK)}
  \begin{enumerate}
-  \item Der FSR stimmt über Anträge der FK ab. Bei einer Enthaltungsmehrheit enthält sich der FSR abweichend von \ref{sec:abstimmungen} Abs.\ \ref{item:abstimmungsmodus} der Stimme. Die Abstimmungsergebnisse werden entweder schriftlich durch Hauspost oder mündlich durch den Vertreter eingereicht.  
+  \item Der FSR stimmt über Anträge der FK ab. Bei einer Enthaltungsmehrheit enthält sich der FSR abweichend von \ref{sec:abstimmungen} Abs.~\ref{item:abstimmungsmodus} der Stimme. Die Abstimmungsergebnisse werden entweder schriftlich durch Hauspost oder mündlich durch den Vertreter eingereicht.  
   \item Das Votum des FSR ist bindend. Liegt kein Votum vor, kann der Vertreter im Sinne des FSR entscheiden.
  \end{enumerate}
 
-\section{Beschluss und Änderung der Geschäftsordnung} \label{sec:GO-Änderung}
+\section{Beschluss und Änderung der Geschäftsordnung}
 \begin{enumerate}
 	\item Die Geschäftsordnung wird mit absoluter Mehrheit aller FSR-Mitglieder beschlossen.
 	\item Änderungen der Geschäftsordnung können nur mit Zweidrittelmehrheit aller FSR-Mitglieder beschlossen werden.
@@ -193,7 +113,7 @@ Das Logo der Fachschaft Physik ist auf allen offiziellen Schriftstücken (Briefe
 \end{enumerate}
 
 \section{Inkrafttreten}
-Die Geschäftsordnung des Fachschaftsrats Physik der WWU tritt durch Beschluss des Fachschaftsrats am \formatdate{11}{01}{2017} in Kraft.
+Die Geschäftsordnung des Fachschaftsrats Physik der Westfälischen Wilhelms-Universität Münster tritt durch Beschluss des Fachschaftsrats am \DTMdate{2017-01-11} in Kraft.
 
 
 \end{document}

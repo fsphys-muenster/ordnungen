@@ -1,98 +1,21 @@
-%%% Pakete & Klassen
-% Verwendung von KOMA-Script
-\documentclass[
-	% Papierformat
-	a4paper,
-	% Schriftgröße
-	12pt,
-	% einseitiges Layout
-	oneside,
-	% Abstand zwischen Absätzen statt Einrücken
-	parskip=half-,
-	% Papiergröße korrekt ins Dokument schreiben
-	pagesize,
-	% Linie unter der Kopfzeile
-	headsepline,
-	% deutsches Dokument (neue deutsche Rechtschreibung)
-	german,
-	ngerman
-]{scrartcl}
-\usepackage{iftex}
-\ifLuaTeX
-	% Einstellungen für Schriftart
-	\usepackage{fontspec}
-	% Silbentrennung, sprachspezifische Einstellungen
-	\usepackage{polyglossia}
-	\setmainlanguage{german}
-\else
-	% Silbentrennung, sprachspezifische Einstellungen
-	\usepackage{babel}
-	% Mögliche darstellbare Zeichen (Umlaute, Sonderzeichen...)
-	\usepackage[T1]{fontenc}
-	% Zeichenkodierung der TeX-Datei
-	\usepackage[utf8]{inputenc}
-	% Schriftart
-	\usepackage{lmodern}
-	% führt Befehle für Sonderzeichen ein
-	\usepackage{textcomp}
-\fi
-% Einige LaTeX-Bugs beheben
-\usepackage{fixltx2e}
-% Besseres Schriftbild
-\usepackage{microtype}
-% Für Kopf-/Fußzeile etc.
-\usepackage{scrpage2}
-% Farben ermöglichen
-\usepackage{xcolor}
-% Paket für Bilder-Einbindung (EPS, PNG, JPG, PDF)
-\usepackage{graphicx}
-% Formatierung von Daten
-\usepackage{datetime}
-% Einstellungen für Aufzählungen
-\usepackage{enumitem}
-% "Schlaue" Anführungszeichen
-\usepackage{csquotes}
-% Seitenränder
-\usepackage[
-	left=2cm,
-	right=2cm,
-	top=2cm,
-	bottom=1.3cm,
-	includeheadfoot
-]{geometry}
-% Verlinkung, Querverweise können im PDF angeklickt werden
-\usepackage[bookmarksnumbered, unicode]{hyperref}
+\input{fsphys_ordnungen_header.tex}
 
-%%% Einstellungen
-% Anführungszeichen automatisch umwandeln
-\MakeOuterQuote{"}
-
+% PDF-Metadaten
 \hypersetup{
-	% Links/Verweise in PDF mit Kasten der Dicke 0.5pt versehen
-	pdfborder={0 0 0.5},
 	pdfauthor={Fachschaftsvertretung Physik der WWU Münster},
 	pdftitle={Geschäftsordnung der Fachschaftsvertretung Physik der Westfälischen Wilhelms-Universität Münster},
 	pdfkeywords={Fachschaftsvertretung, FSV, WWU, Münster, Geschäftsordnung}
 }
 
 % Kopfzeile
-\chead{Geschäftsordnung der FSV Physik der Westfälischen Wilhelms-Universität Münster}
+\ihead{Geschäftsordnung der FSV Physik der Westfälischen Wilhelms-Universität Münster}
 \pagestyle{scrheadings}
 
-% Darstellung von sections anpassen
-\renewcommand{\thesection}{§~\arabic{section}}
-
-% Befehl zur Darstellung von E-Mail-Adressen
-\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
-
 %%% Bestandteile des Titels
-\titlehead{\vspace*{-2cm}
-\centering
-\includegraphics[width=0.8\textwidth]{Fachschaft_Physik_Logo_v2014_2.pdf}}
 \title{Geschäftsordnung}
 \subtitle{der Fachschaftsvertretung Physik\\
 der Westfälischen Wilhelms-Universität Münster}
-\date{in der Fassung vom \formatdate{06}{01}{2016}}
+\date{in der Fassung vom \DTMdate{2016-01-06}}
 \author{}
 
 \begin{document}
@@ -102,7 +25,7 @@ der Westfälischen Wilhelms-Universität Münster}
 
 \section{Einberufung der FSV-Sitzungen}
 \begin{enumerate}
-	\item Jedes Mitglied der FSV kann eine FSV-Sitzung einberufen.
+	\item Jedes Mitglied der Fachschaftsvetrertung (FSV) kann eine FSV-Sitzung einberufen.
 	\item Eine Sitzung der FSV muss mindestens eine Woche zuvor durch Benachrichtigung aller Mitglieder der FSV einberufen werden.
 \end{enumerate}
 
@@ -152,7 +75,7 @@ der Westfälischen Wilhelms-Universität Münster}
 	\item Jedes Mitglied der FSV kann sich und andere Mitglieder der Fachschaft Physik zur Wahl vorschlagen.
 	\item Wahlen werden von der Redeleitung durchgeführt. Sollte die Redeleitung selbst zur Wahl stehen, so wird ein Wahlleiter für diese Wahl gewählt.
 	\item Gemäß §~3 Abs.~2 der Fachschaftsordnung der Fachschaft Physik erfolgt die Wahl des Fachschaftsrats (FSR) mit Handzeichen unter Ausschluss der Öffentlichkeit. Auf Antrag einer anwesenden wahlberechtigten Person muss eine geheime Wahl stattfinden. Es kann auch über eine Liste als Ganzes abgestimmt werden. 
-	\item Bei Personenwahlen können die Mitglieder der FSV für einen Kandidaten stimmen oder sich der Stimme enthalten. Bei Listenwahlen können die Mitglieder der FSV für eine Vorschlagsliste stimmen oder sich ihrer Stimme enthalten, steht nur eine Liste zur Wahl, so können die Mitglieder der FSV zusätzlich gegen die Vorschlagsliste stimmen. In diesem Falle gelten die in §~3 Abs.~5 beschrieben Kriterien über die Wahl der Liste. 
+	\item Bei Personenwahlen können die Mitglieder der FSV für einen Kandidaten stimmen oder sich der Stimme enthalten. Bei Listenwahlen können die Mitglieder der FSV für eine Vorschlagsliste stimmen oder sich ihrer Stimme enthalten. Steht nur eine Liste zur Wahl, so können die Mitglieder der FSV zusätzlich gegen die Vorschlagsliste stimmen. In diesem Fall gelten die in §~3 Abs.~5 beschrieben Kriterien über die Wahl der Liste.
 	\item Durch Personenwahl ist gewählt, wer eine absolute Mehrheit erreicht. Ergibt sich im ersten Wahlgang keine absolute Mehrheit, so folgt ein zweiter Wahlgang. Ergibt sich auch im zweiten Wahlgang keine absolute Mehrheit, findet ein dritter Wahlgang statt. Im dritten Wahlgang ist gewählt, wer eine relative Mehrheit erhält. Vereinigen mehrere Kandidaten im dritten Wahlgang gleich viele und jeweils die meisten Stimmen auf sich, findet eine Stichwahl zwischen diesen statt. Vereinigen auch in der Stichwahl mehrere Kandidaten gleich viele und jeweils die meisten Stimmen auf sich, entscheidet zwischen ihnen das Los. 
 \end{enumerate}
 
@@ -166,6 +89,6 @@ der Westfälischen Wilhelms-Universität Münster}
 Die Geschäftsordnung und deren Änderungen können nur mit Zweidrittelmehrheit aller FSV-Mitglieder beschlossen werden.
 
 \section{Inkrafttreten}
-Die Geschäftsordnung der Fachschaftsvertretung Physik der WWU tritt durch Beschluss der Fachschaftsvertretung und durch öffentlichen Aushang am \formatdate{07}{01}{2016} in Kraft.
+Die Geschäftsordnung der Fachschaftsvertretung Physik der Westfälischen Wilhelms-Universität Münster tritt durch Beschluss der Fachschaftsvertretung und durch öffentlichen Aushang am \DTMdate{2016-01-07} in Kraft.
 
 \end{document}
