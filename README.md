@@ -1,5 +1,5 @@
 # ordnungen
-[![Lizenz](https://img.shields.io/github/license/fsphys-muenster/satzungen-go.svg)](LICENSE)
+[![Lizenz](https://img.shields.io/github/license/fsphys-muenster/ordnungen.svg)](LICENSE)
 
 Fachschaftsordnung sowie Geschäftsordnungen des Fachschaftsrats (FSR) und der Fachschaftsvertretung (FSV) der Fachschaft Physik der WWU Münster.
 
