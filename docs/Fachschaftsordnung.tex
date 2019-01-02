@@ -7,8 +7,11 @@
 	pdfkeywords={Fachschaftsvertretung, FSV, Physik, WWU, Westfälische Wilhelms-Universität, Münster, Fachschaftsordnung}
 }
 % Paket zur Nachverfolgung von Änderungen
-\usepackage[draft]{changes} % change to final to hide comments
-\definechangesauthor[name=Maik, color=green]{MS}
+%\usepackage{ulem} % package to strike out text
+\usepackage[draft, commentmarkup=footnote]{changes} % change to final to hide comments
+\setaddedmarkup{\textcolor{green}{#1}}
+\setdeletedmarkup{\textcolor{red}{\sout{#1}}}
+\definechangesauthor[name=Maik, color=yellow]{MS}
 
 % Kopfzeile
 \ihead{Fachschaftsordnung der Fachschaft Physik der Westfälischen Wilhelms-Universität Münster}
@@ -34,7 +37,7 @@ Sie regelt ergänzend die Angelegenheiten der Fachschaft.
 Die Aufgaben der Fachschaft sind in §~37 der Satzung der Studierendenschaft aufgeführt.
 Zusätzlich wird eine enge Kooperation mit der Fachschaft Geophysik angestrebt.
 
-\section{\added{Arbeit der }Fachschaftsvertretung}
+\section{\added{Arbeit der} Fachschaftsvertretung}
 \deleted{Die Aufgaben und Zusammensetzung der FSV sind in §~38 der Satzung der Studierendenschaft geregelt.
 Näheres zur Wahl der Fachschaftsvertretungen regelt die Wahlordnung.
 Ergänzend gibt sich die FSV Physik die zusätzlichen Regelungen:}
